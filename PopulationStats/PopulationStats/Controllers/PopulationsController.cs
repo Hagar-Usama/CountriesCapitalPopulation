@@ -33,14 +33,14 @@ namespace PopulationStats.Controllers
 
         // GET: api/Populations/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<Population>> GetPopulation(int id)
+        public async Task<ActionResult<List<Population>>> GetPopulation(int id)
         {
           if (_context.Populations == null)
           {
               return NotFound();
           }
-            var population = await _context.Populations.FindAsync(id);
-
+          
+            var population = await _context.Populations.Where(x => x.CountryId == id).ToListAsync();
             if (population == null)
             {
                 return NotFound();
