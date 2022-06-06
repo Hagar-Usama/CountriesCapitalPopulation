@@ -13,6 +13,8 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5",
           "Microsoft.EntityFrameworkCore.Tools": "6.0.5",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "6.0.5",
+          "Newtonsoft.Json": "13.0.1",
+          "RestSharp": "107.3.0",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
         "runtime": {
@@ -1399,6 +1401,14 @@
           "lib/netstandard2.0/NuGet.Versioning.dll": {
             "assemblyVersion": "5.11.0.10",
             "fileVersion": "5.11.0.10"
+          }
+        }
+      },
+      "RestSharp/107.3.0": {
+        "runtime": {
+          "lib/net6.0/RestSharp.dll": {
+            "assemblyVersion": "107.3.0.0",
+            "fileVersion": "107.3.0.0"
           }
         }
       },
@@ -2834,6 +2844,13 @@
       "sha512": "sha512-mCv/GzvMk5iatWoZY41PoIShEbwVxq9CDCc1fV/uqPFKZ4DD/1JuKZ5AL/FJJRsTanvMR3EOXKYCLdQ7PFYn8Q==",
       "path": "nuget.versioning/5.11.0",
       "hashPath": "nuget.versioning.5.11.0.nupkg.sha512"
+    },
+    "RestSharp/107.3.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qu+A+VAnVLX3OeWVNm11UJz0aVErqSfYqIiOUbJM9x98uLymCOoL/oXRAjMb6XHra27WXxHmzy9EKEOKXWR6Pw==",
+      "path": "restsharp/107.3.0",
+      "hashPath": "restsharp.107.3.0.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
       "type": "package",

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FLxm0fDZonT9g7Sz1kcJ+D0N07aJ6S5Z+hHZ5CHvq1iVedAp9A7tQOkXGdngE0eHP1+3zLjeHWdRwwUoR9VWEA==",
+  "dgSpecHash": "ayZ4b8tQb/lMGS0Sq9UFiRRcYYcUd6FT0xQVKmh9TxNqsqMlYTUmYc+k8ynnNq1P9PXRFeb7Ojb0MoQ01Rh09Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\hagarusama\\Documents\\GitHub\\CountriesCapitalPopulation\\PopulationStats\\PopulationStats\\PopulationStats.csproj",
   "expectedPackageFiles": [
@@ -83,6 +83,7 @@
     "C:\\Users\\hagarusama\\.nuget\\packages\\nuget.projectmodel\\5.11.0\\nuget.projectmodel.5.11.0.nupkg.sha512",
     "C:\\Users\\hagarusama\\.nuget\\packages\\nuget.protocol\\5.11.0\\nuget.protocol.5.11.0.nupkg.sha512",
     "C:\\Users\\hagarusama\\.nuget\\packages\\nuget.versioning\\5.11.0\\nuget.versioning.5.11.0.nupkg.sha512",
+    "C:\\Users\\hagarusama\\.nuget\\packages\\restsharp\\107.3.0\\restsharp.107.3.0.nupkg.sha512",
     "C:\\Users\\hagarusama\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\hagarusama\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\hagarusama\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
