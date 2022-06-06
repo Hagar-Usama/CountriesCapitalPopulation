@@ -47,12 +47,35 @@ namespace PopulationStats.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Country>>> GetCountries()
         {
-
+            // importing external data
             var client = new RestClient($"https://countriesnow.space/api/v0.1/countries/population");
             var request = new RestRequest();
             RestResponse response = await client.ExecuteAsync(request);
-            dynamic responseContent = JsonConvert.DeserializeObject(response.Content);
-            Console.WriteLine(responseContent);
+            dynamic responseContent = null;
+            while(responseContent == null)
+            {
+                responseContent = JsonConvert.DeserializeObject(response.Content);
+            }
+            // Todo: parse content
+            // Todo: update db accordingly
+            // Todo: move from here
+
+            //Console.WriteLine(responseContent);
+            //if (responseContent != null)
+            //{
+            //    foreach (dynamic i in responseContent)
+            //    {
+            //        string country = i.country;
+
+            //        foreach (dynamic j in i)
+            //        {
+
+            //        }
+            //    }
+                        
+
+            //}
+            //foreach dynamic in responseContent:
 
             if (_context.Countries == null)
           {
