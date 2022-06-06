@@ -92,7 +92,8 @@ namespace PopulationStats.Controllers
             _context.Countries.Add(country);
             await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetCountry", new { id = country.CountryId }, country);
+            return CreatedAtAction(nameof(GetCountry), new { id = country.CountryId }, country);
+            
         }
 
         // DELETE: api/Countries/5
