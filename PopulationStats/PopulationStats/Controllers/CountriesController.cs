@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Threading.Tasks;
+//using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PopulationStats.Models;
@@ -21,6 +21,7 @@ namespace PopulationStats.Controllers
         }
 
         // GET: api/Countries
+        //[TODO]  add paging feature
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Country>>> GetCountries()
         {
@@ -83,6 +84,8 @@ namespace PopulationStats.Controllers
         // POST: api/Countries
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
+
+        //[TODO]  add paging feature
         public async Task<ActionResult<Country>> PostCountry(Country country)
         {
           if (_context.Countries == null)
