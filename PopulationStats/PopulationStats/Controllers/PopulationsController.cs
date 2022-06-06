@@ -54,7 +54,7 @@ namespace PopulationStats.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPopulation(int id, Population population)
         {
-            if (id != population.CityId)
+            if (id != population.PopulationId)
             {
                 return BadRequest();
             }
@@ -90,23 +90,9 @@ namespace PopulationStats.Controllers
               return Problem("Entity set 'PopuContext.Populations'  is null.");
           }
             _context.Populations.Add(population);
-            try
-            {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateException)
-            {
-                if (PopulationExists(population.CityId))
-                {
-                    return Conflict();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+            await _context.SaveChangesAsync();
 
-            return CreatedAtAction("GetPopulation", new { id = population.CityId }, population);
+            return CreatedAtAction("GetPopulation", new { id = population.PopulationId }, population);
         }
 
         // DELETE: api/Populations/5
@@ -131,7 +117,7 @@ namespace PopulationStats.Controllers
 
         private bool PopulationExists(int id)
         {
-            return (_context.Populations?.Any(e => e.CityId == id)).GetValueOrDefault();
+            return (_context.Populations?.Any(e => e.PopulationId == id)).GetValueOrDefault();
         }
     }
 }
