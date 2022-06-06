@@ -39,8 +39,12 @@ namespace PopulationStats.Controllers
           {
               return NotFound();
           }
-          
+            //var country = _context.Countries.Where(x => x.Name == id);
             var population = await _context.Populations.Where(x => x.CountryId == id).ToListAsync();
+
+
+            //var population = await _context.Populations.Where(x => x.CountryId == cId).ToListAsync();
+
             if (population == null)
             {
                 return NotFound();
