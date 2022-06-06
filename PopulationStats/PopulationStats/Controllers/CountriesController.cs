@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using RestSharp;
@@ -23,25 +19,6 @@ namespace PopulationStats.Controllers
             _context = context;
         }
 
-
-
-
-
-
-        //// get external api 
-        ////[HttpGet]
-        //[HttpGet]
-        //public async Task<IActionResult> GetByIdAync()
-        //{
-        //    var client = new RestClient($"https://countriesnow.space/api/v0.1/countries/population");
-        //    var request = new RestRequest();
-        //    RestResponse response = await client.ExecuteAsync(request);
-        //    dynamic responseContent = JsonConvert.DeserializeObject(response.Content);
-        //    Console.WriteLine(responseContent);
-        //    //TODO: transform the response here to suit your needs
-        //    string data = "";
-        //    return Ok(responseContent);
-        //}
 
         // GET: api/Countries
         [HttpGet]
